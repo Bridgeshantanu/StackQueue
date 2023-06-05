@@ -29,8 +29,33 @@ namespace DataStructure1
                 top = newNode;
             }
         }
+        public T Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty.");
+            }
 
-       
+            T data = top.Data;
+            top = top.Next;
+
+            return data;
+        }
+
+        public T Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty.");
+            }
+
+            return top.Data;
+        }
+        public bool IsEmpty()
+        {
+            return top == null;
+
+        }
         public void Display()
         {
             if (top == null)
