@@ -25,7 +25,9 @@
             queue.Enqueue(30);
             queue.Enqueue(70);
             queue.Display();
-
+            Console.WriteLine("\n");
+            queue.Dequeue();
+            queue.Display();
 
         }
 
