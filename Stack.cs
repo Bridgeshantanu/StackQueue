@@ -8,7 +8,7 @@ namespace DataStructure1
 {
     internal class Stack<T>
     {
-        private Node<T> top;
+        public Node<T> top;
 
         public Stack()
         {
